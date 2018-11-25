@@ -97,37 +97,27 @@
 
     <script type="text/javascript">
 
+      var i = 0;
+      var clicks = Array();
+
       function clicado(id) {
 
-        console.log(id);
+        clicks[i] = id;
+        i++;
 
-        /*switch (id) {
+          if (id != "AC" && id != "<") {
         
-          case "btn7":
-            console.log("Botão 7");
-          case "btn8":
-            console.log("Botão 8");
-          case "btn9":
-            console.log("Botão 9");
-          default:
-            console.log("Estranho");
-
-        }*/
-
+            document.getElementById("mostrarValores").innerHTML = id;
+            console.log("Array: "+clicks);
+          
+          }      
 
       }
    
 
 
 
-       /* var btn7 = document.getElementById("btn7").value;
-        var btn8 = document.getElementById("btn8").value;
-        var btn9 = document.getElementById("btn9").value;
-        var btnPorcentagem = document.getElementById("btnPorcentagem").value;
-        console.log(btn7);
-        console.log(btn8);
-        console.log(btn9);
-        console.log(btnPorcentagem);*/
+    
       
 
 
