@@ -102,15 +102,28 @@
 
       function clicado(id) {
 
-        clicks[i] = id;
-        i++;
-
           if (id != "AC" && id != "<") {
+
+             clicks[i] = id;
+             i++;
         
-            document.getElementById("mostrarValores").innerHTML = id;
+           // document.getElementById("mostrarValores").innerHTML = id;
             console.log("Array: "+clicks);
           
           }      
+
+          if (id == "<") {
+
+            clicks.pop();
+            console.log("Array Removido: "+clicks);
+          }
+
+          if (id == "AC") {
+
+            clicks.length = 0;
+            console.log("Array Zerado: "+clicks);
+
+          }
 
       }
    
