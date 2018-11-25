@@ -1,0 +1,12 @@
+h3 {
+	text-align: center;
+	padding: 2em;
+}
+
+button {
+	width: 5em;
+}
+
+.container {
+	border: 1px solid black;
+}
