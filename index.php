@@ -102,6 +102,7 @@
 
       function clicado(id) {
 
+
           if (id != "AC" && id != "<") {
 
              clicks[i] = id;
@@ -115,24 +116,28 @@
           if (id == "<") {
 
             clicks.pop();
+
+            if (i > 0) {
+              i--;
+            }
+
             console.log("Array Removido: "+clicks);
           }
 
           if (id == "AC") {
-
             clicks.length = 0;
+            i=0;
+            /*while(clicks.length) {
+
+              clicks.pop();
+
+            }*/
+            
             console.log("Array Zerado: "+clicks);
 
           }
 
       }
-   
-
-
-
-    
-      
-
 
     </script>
 
